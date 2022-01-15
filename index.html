@@ -5,22 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    
+    
     <title>Document</title>
   </head>
   <body>
     <div class="navbar">
-      <img src="images/logo.png" height="90" alt="" />
+      <div class="nav"></div>
+      <img src="images/logo.png"height =200 alt="">
       <li><a href=""> MENU</a></li>
       <li><a href=""> OFFERS</a></li>
       <li><a href=""> DELIVERY PARTNERS</a></li>
       <li><a href=""> CONTACT</a></li>
+      <div><img src="images/bg.jpg" height = 250 alt=""></div>
+    </div>
     </div>
 
     <div class="about">
       <h1>PIZZA TO YOUR DOOR!</h1>
-      <div class="pic1">
-        <img src="images/piz3.jpg " height="500" width="700" alt="" />
-      </div>
+      
       <h1>ABOUT US</h1>
       <p>
         We see pizza as our crispy, chewy, edible passion – a platform on which
@@ -36,32 +39,128 @@
         focus on societal improvement.
       </p>
     </div>
-    <div class="menu">
-      <h2>Here is a list of our specials</h2>
-      <div class="pic2">
-        <img src="images/haweian.jpg" alt="Hawaian" />
-      </div>
-      <p>
-        HAWAIAN-crips bacon,mozzarella cheese,backed on thin crust<br />
-        topped with lettuce,tomatoes,mayo,pineapples and red souce.
-      </p>
+    <div class="piz">
+      <div class="piz1">
+        <img src="images/haweian.jpg"height= 300 width="400" alt="">
+        <p>HAWAIAN-crips bacon,mozzarella cheese,backed on thin crust<br />
+          topped with lettuce,tomatoes,mayo,pineapples and red souce.</p>
+
+
+  <img src="images/veg.jpg" height="300" width = "400" alt="">
+  <p>
+    VEGGAN STUFFED- a healthy choice of fresh spinach,brocoli,red
+    tomatoes,black olives<br />
+    mushroom,green peppers,red onions and extra cheese
+  </p>
+  
+    <img src="images/p.jpg"height =300 width="400" alt="">
+    <p>
+      PEPERONNI-stuffed crust,ham,salami,peperonni,roasted red peppers<br />
+      ,caramalized onions,topped with swirl of pesto.
+    </p>
+</div>
+<br><br>><br>>
+
+<div class="pic4">
+  <img src="images/piz.jpg" height="350" width="300" alt="">
+  <p>PERIPERI CHICKEN- The peri peri sauce is made of hot chili peppers,<br> jalapenos, lemon, vinegar, herbs, and spices. </p>
+
+
+  <img src="images/sec.jpg" height = 400 width = 320 alt="">
+  <p>CHICKEN TIKKA- masala, dish consisting of marinated boneless chicken pieces <br> are traditionally cooked in a tandoor and then served in a subtly spiced tomato-cream sauce.</p>
+
+
+  <img src="images/piz3.jpg" height="400" width = 400 alt="">
+  <p>
+    BBQ - Cheesesteak Pizza is made with homemade pizza dough,<br> bbq sauce, thinly sliced beef, sauteed peppers and onions and topped with cheese!
+  </p>
+
+
+</div>
+
+<div class="forms">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="pizza">pizza</label>
+    <select id="Pizza" name="Flavor">
+      <option value="australia">Haweian</option>
+      <option value="canada">BBQ steak</option>
+      <option value="usa">Peperoni</option>
+      <option value="usa">Chicken tikka</option>
+      <option value="usa">Vegan stuffed</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
-    <div class="pic3">
-      <p>
-        PEPERONNI-stuffed crust,ham,salami,peperonni,roasted red peppers<br />
-        ,caramalized onions,topped with swirl of pesto.
-      </p>
-      <div class="pep">
-        <img src="images/piz.jpg" height="400" alt="" />
-      </div>
+   
+    
+    
+
+    
+
+    <div class="deluxe">
+      <h2>Deluxe toppings</h2>
+      <p>Green peppers</p>
+      <p>Mushrooms</p>
+      <p>Red onions</p>
     </div>
 
-    <div class="veg">
-      <div class="pic4"><img src="images/veg.jpg" height="600" width = "500" alt="" /></div>
-      <p>
-        VEGGAN STUFFED- a healthy choice of fresh spinach,brocoli,red tomatoes,black olives<br />
-        mushroom,green peppers,red onions and extra cheese
-      </p>
+
+    <div class="D">
+      <h3>DELIVERY ADDRESS</h3>
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+        <label for="estate">Estate</label>
+        <select id="Estate" name="country">
+          <option value="australia">ngong</option>
+          <option value="canada">riara</option>
+          <option value="usa">ruaka</option>
+        </select>
+      
+        <input type="submit" value="Submit">
+      </form>
     </div>
+
+    <script src="index.js"></script>
+    <script src="jquery-3.6.0.js"></script>
   </body>
 </html>
