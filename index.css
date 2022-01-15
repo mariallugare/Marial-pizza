@@ -1,5 +1,6 @@
 .body{
   background-color: black;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .navbar{
@@ -16,7 +17,7 @@ margin-bottom: 100px;
 }
 .about{
   text-align: center;
-  color: black;
+  color: white;
 }
 
 
