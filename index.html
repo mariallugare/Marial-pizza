@@ -80,23 +80,45 @@
 
 <div class="forms">
   <form action="/action_page.php">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="pizza">pizza</label>
+    <label for="flavor"> Select a Flavor</label>
     <select id="Pizza" name="Flavor">
-      <option value="australia">Haweian</option>
-      <option value="canada">BBQ steak</option>
-      <option value="usa">Peperoni</option>
-      <option value="usa">Chicken tikka</option>
-      <option value="usa">Vegan stuffed</option>
+      <option value=""></option>
+      <option value="h">Haweian</option>
+      <option value="b">BBQ steak</option>
+      <option value="p">Peperoni</option>
+      <option value="ct">Chicken tikka</option>
+      <option value="v">Vegan stuffed</option>
+    </select>
+
+  <label for="Select your preffred size">Select your prefered size</label>
+    <select id="Pizza" name="Flavor">
+      <option value=""></option>
+      <option value="el">Extra Large ksh 1550</option>
+      <option value="l">Large ksh 1250</option>
+      <option value="m">Medium ksh 800</option>
+      <option value="s">Small ksh 500</option>
+    </select>
+  
+   
+
+
+    <label for="lname">Toppings</label>
+    <select id="Pizza" name="Flavor">
+      <option value="t"></option>
+      <option value="b">Green pepper ksh 100</option>
+      <option value="p">pineaple ksh 200</option>
+      <option value="c"> mushroom ksh 200</option>
+      <option value="v">Bacon ksh 300</option>
+    </select>
+    
+
+    <label for="crust">Crust</label>
+    <select id="crust" name="Crust">
+      <option value=""></option>
+      <option value="thin">Thin ksh 200</option>
+      <option value="thick">Thick ksh 300</option>
+      <option value="double">Double stack</option>
+      
     </select>
   
     <input type="submit" value="Submit">
