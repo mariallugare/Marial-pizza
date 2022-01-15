@@ -1,20 +1,27 @@
 .body{
-  background-color: black;
+  background-color:;
   font-family: 'Times New Roman', Times, serif;
 }
 
 .navbar{
-  background-color: black;
-  background-size: cover;
+  background-image: url(images/bgk.jpg);
   background-repeat: no-repeat;
   background-position: center;
   height: 500px;
-}
-.nav{
   display: flex;
   justify-content: space-between;
-margin-bottom: 100px;
+  color:yellow;
+
 }
+
+.navbar pik{
+  padding-right: 40px;
+  margin-top: -60px;
+}
+.navbar li{
+  color: yellow;
+}
+
 .about{
   text-align: center;
   color: white;
@@ -25,12 +32,14 @@ margin-bottom: 100px;
   display: flex;
   justify-content: space-between;
   float: left;
+  color: white;
 
 }
 .pic4{
   display: flex;
   justify-content: space-between;
   float: left;
+  color: white;
 }
 .forms{
 
@@ -49,7 +58,7 @@ input[type=text], select {
 
 input[type=submit] {
   width: 100%;
-  background-color: #4CAF50;
+  background-color: #545c4b;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
