@@ -1,5 +1,6 @@
 .body{
   font-family: 'Times New Roman', Times, serif;
+
 }
 
 .navbar{
@@ -10,33 +11,74 @@
   display: flex;
   justify-content: space-between;
   color:yellow;
-
+background-color: black;
 }
 
-.navbar pik{
-  padding-right: 40px;
-  margin-top: -60px;
-}
-.navbar li{
-  color: yellow;
+.header{
+  text-align: center;
+  padding-bottom: 80px;
+  margin-bottom: -50px;
 }
 
 .about{
   text-align: center;
-  color: white;
+  color:black;
+  
+}
+.menu{
+  text-align: center;
 }
 .piz{
   display: flex;
   justify-content: space-evenly;
-  border: black;
+  border-color: white;
+  background-color: black;
+  color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+
+}
+.piz button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 
 .pic4{
   display: flex;
   justify-content: space-evenly;
- 
+  border-color: white;
+  background-color: black;
+  color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
 }
+.pic4 button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  
+}
+
 
 input[type=text], select {
   width: 100%;

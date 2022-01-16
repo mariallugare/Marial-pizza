@@ -5,46 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
     
     
-    <title>Document</title>
+    <title>Marial pizza</title>
   </head>
   <body class="body">
     <div class="navbar">
 
       <div class="pik"><img src="images/logo.png"height =200 alt=""> </li>  </div>
+      <h1>Hello😄come get a
+        slice of heaven!!<br>
+        we have so many offers for you!
+        <button>Order Now</button> 
         <li><a href=""> MENU</a></li>
         <li><a href=""> OFFERS</a></li>
         <li><a href=""> DELIVERY ADDRESS</a></li>
         <li><a href=""> CONTACT</a></li>
-     
     </div>
-    
-
     <div class="about">
+     
+<img src="images/pc.jpg" alt="">
+
       <h1>PIZZA TO YOUR DOOR!</h1>
       
       <h1>ABOUT US</h1>
-      <p>
+  <p>
         We see pizza as our crispy, chewy, edible passion – a platform on which
-        we can imagine all our culinary ambitions. And we believe that our pizza
+        we can imagine all our culinary ambitions.<br> And we believe that our pizza
         can only be as relevant, radical and creative as the people who make it,
-        support it and love it. As a people-centric company, every decision we
-        make comes from our employees and stakeholders. We believe that our
+        support it and love it.<br> As a people-centric company, every decision we
+        make comes from our employees and stakeholders.<br> We believe that our
         values are the DNA of our company because they are the DNA of our
-        employees. We hire our staff based on their alignment with these Core
-        Values and a passion for community engagement. As a result, though we
-        operate as a for-profit entity, we utilize tenets from not-for-profit
+        employees.<br> We hire our staff based on their alignment with these Core
+        Values and a passion for community engagement.<br> As a result, though we
+        operate as a for-profit entity,<br> we utilize tenets from not-for-profit
         businesses in our operations by combining profit maximization with a
-        focus on societal improvement.
-      </p>
-    </div>
+        focus on societal improvement.  </p>
+        
+
+       Weekly Operation Hours:<br>
+        Monday...........10am-3pm<br>
+        
+        Tuesday...........10am-3pm<br>
+        
+        Wednesday.....10am-3pm<br>
+        
+        Thursday........10am-3pm<br>
+        
+        Friday............10am-3pm<br>
+        
+        Weekend..............closed<br> 
+</div>
+
+
+
+
     <br> <br>
+    <span class="menu"><H1>Menu</H1> </span>
     <div class="piz">
       <div class="piz1">
         <img src="images/haweian.jpg"height= 300 width="400" alt="">
         <p>HAWAIAN-crips bacon,mozzarella cheese,backed on thin crust<br />
-          topped with lettuce,tomatoes,mayo,pineapples and red souce.</p> <button>Order Now</button> </div>
+          topped with lettuce,tomatoes,mayo,pineapples and red souce.</p> <button>Hawaian</button> </div>
 
           <div class="piz2">
   <img src="images/veg.jpg" height="300" width = "400" alt="">
@@ -52,32 +75,32 @@
     VEGGAN STUFFED- a healthy choice of fresh spinach,brocoli,red
     tomatoes,black olives<br />
     mushroom,green peppers,red onions and extra cheese
-  </p> <button>Order Now</button></div>
+  </p> <button class="button">Vegan stuffed</button></div>
 
   <div class="piz2">
     <img src="images/p.jpg"height =300 width="400" alt="">
     <p>
       PEPERONNI-stuffed crust,ham,salami,peperonni,roasted red peppers<br />
       ,caramalized onions,topped with swirl of pesto.
-    </p> <button>Order Now</button></div>
+    </p> <button>Peperoni</button></div>
 </div>
 <br>
 
 <div class="pic4">
   <div class="pic5">
   <img src="images/tik.jpg" height="350" width="400" alt="">
-  <p>PERIPERI CHICKEN- The peri peri sauce is made of hot chili peppers,<br> jalapenos, lemon, vinegar, herbs, and spices. </p> <button>Order Now</button> </div>
+  <p>PERIPERI CHICKEN- The peri peri sauce is made of hot chili peppers,<br> jalapenos, lemon, vinegar, herbs, and spices. </p> <button class="button">PERIPERI</button> </div>
 
 
   <div class="pic6"><img src="images/pep.jpg" height = 350 width = 420 alt="">
-  <p>CHICKEN TIKKA- masala, dish consisting of marinated boneless chicken pieces <br> are traditionally cooked in a tandoor and then served in a subtly spiced tomato-cream sauce.</p> <button>Order Now</button> </div>
+  <p>CHICKEN TIKKA- masala, dish consisting of marinated boneless chicken pieces <br> are traditionally cooked in a tandoor and then served in a subtly spiced tomato-cream sauce.</p> <button>CHICKEN TIKKA</button> </div>
 
 
   <div class="pic7"> <img src="images/piz3.jpg" height="350" width = 450 alt="">
   <p>
     BBQ - Cheesesteak Pizza is made with homemade pizza dough,<br> bbq sauce, thinly sliced beef, sauteed peppers and onions and topped with cheese! 
   </p>
-  <button>Order Now</button>
+  <button>BBQ STEK</button>
 </div>
 </div>
 
@@ -85,7 +108,7 @@
   <h3>Make your pizza!</h3>
   <form action="/action_page.php">
     <label for="flavor"> Select a Flavor</label>
-    <select id="Pizza" name="Flavor">
+    <select id="flavour" name="Flavor">
       <option value=""></option>
       <option value="h">Haweian</option>
       <option value="b">BBQ steak</option>
@@ -95,7 +118,7 @@
     </select>
 
   <label for="Select your preffred size">Select your prefered size</label>
-    <select id="Pizza" name="Flavor">
+    <select id="size" name="Flavor">
       <option value=""></option>
       <option value="el">Extra Large ksh 1550</option>
       <option value="l">Large ksh 1250</option>
@@ -104,10 +127,8 @@
     </select>
   
    
-
-
-    <label for="lname">Toppings</label>
-    <select id="Pizza" name="Flavor">
+ <label for="lname">Toppings</label>
+    <select id="toppings" name="Flavor">
       <option value="t"></option>
       <option value="b">Green pepper ksh 100</option>
       <option value="p">pineaple ksh 200</option>
@@ -124,19 +145,23 @@
       <option value="double">Double stack</option>
       
     </select>
+
+    <label for="Quantity">Quantity</label>
+    <select name="Quantity" id="quantity">
+
+      <option value="">1</option>
+      <option value="1">2</option>
+      <option value="2"></option>
+     
+    </select>
+    <label for="TOTAL">TOTAL</label>
+    <Button>click here</Button>
+
   
     <input type="submit" value="Submit">
   </form>
 </div>
-
-
-
-
-
-</div>
-
-   
-    <h3>DELIVERY ADDRESS:</h3>
+</div><h3>DELIVERY ADDRESS:</h3>
     <div class="d">
       <h3>DELIVERY ADDRESS</h3>
       <form action="/action_page.php">
@@ -147,6 +172,7 @@
         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
     
         <label for="estate">Estate</label>
+        <input type="text" id="estate" name="estate" placeholder="where would you like your pizza delivered!">
         <select id="Estate" name="country">
           <option value=""></option>
           <option value="ngong">ngong</option>
