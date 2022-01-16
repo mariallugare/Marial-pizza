@@ -45,6 +45,23 @@ totalSelectChange = function () {
         let customCrust = $("#crust").val();
         let customQuantity = $("#quantity option:selected").val();
 
+        if (customToppings == "pinapple") {
+            customToppings = 200
+        }
+        else if (customToppings == "pepper") {
+            customToppings = 100
+        }
+        else if (customToppings == "mushroom") {
+            customToppings = 250
+        }
+        else if (customToppings == "bacon") {
+            customToppings = 300
+        }
+        if (customSize == "Extra large") {
+            sizePrice = 1500;
+        }
 
-
+}
+if (customToppings == "pinapple") {
+    customToppings = 200
 }
