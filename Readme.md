@@ -23,6 +23,7 @@ This is a website that allows pizza lovers to order from marial pizza online.The
 **Project set-up instructions:**
 
 Either a computer,phone,tablet or an Ipad
+
 An access to the Internet
 
 
