@@ -48,7 +48,7 @@ totalSelectChange = function () {
         if (customToppings == "pinapple") {
             customToppings = 200
         }
-        else if (customToppings == "pepper") {
+        else if (customToppings == " green pepper") {
             customToppings = 100
         }
         else if (customToppings == "mushroom") {
@@ -60,8 +60,32 @@ totalSelectChange = function () {
         if (customSize == "Extra large") {
             sizePrice = 1500;
         }
-
-}
-if (customToppings == "pinapple") {
-    customToppings = 200
-}
+        else
+        if (customSize == "Large") {
+           sizePrice = 1250;
+       }
+       else if (customSize == "Medium") {
+           sizePrice = 600;
+       }
+       else if (customSize == "Small") {
+           sizePrice = 500;
+       }
+       else(sizePrice == 0);
+       if (customCrust == "Thin") {
+        crustPrice = 200;
+    }
+    else if (customCrust == "Thick") {
+        crustPrice = 300;
+    }
+    else if (customCrust == "DoubleStack") {
+        crustPrice = 500;
+    }
+    else {
+        crustPrice = 0;
+    }
+    totalCost = sizePrice + crustPrice + (customToppings);
+    totalCost = totalCost * quantity; 
+    alert("You have selected "+customSize+" Pizza."+"\n"+" with "+customCrust+" as crust and"+"\n"+" with "+customToppings+" as toppings"+"Total price is Ksh."+totalCost);
+    
+    }
+ 

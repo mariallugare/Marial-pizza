@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="sweetalert2.all.min.js"></script>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="bootstrap/bootstrap.css">
     
@@ -82,7 +83,7 @@
     <p>
       PEPERONNI-stuffed crust,ham,salami,peperonni,roasted red peppers<br />
       ,caramalized onions,topped with swirl of pesto.
-    </p> <button>Peperoni</button></div>
+    </p> <button onclick="marion">Peperoni</button></div>
 </div>
 <br>
 
@@ -106,7 +107,7 @@
 
 <div class="forms">
   <h3>Make your pizza!</h3>
-  <form action="/action_page.php">
+  <form>
     <label for="flavor"> Select a Flavor</label>
     <select id="flavour" name="Flavor">
       <option value=""></option>
@@ -120,7 +121,7 @@
   <label for="Select your preffred size">Select your prefered size</label>
     <select id="size" name="Flavor">
       <option value=""></option>
-      <option value="el">Extra Large ksh 1550</option>
+      <option value="el">Extra Large ksh 1500</option>
       <option value="l">Large ksh 1250</option>
       <option value="m">Medium ksh 800</option>
       <option value="s">Small ksh 500</option>
@@ -142,7 +143,7 @@
       <option value=""></option>
       <option value="thin">Thin ksh 200</option>
       <option value="thick">Thick ksh 300</option>
-      <option value="double">Double stack</option>
+      <option value="double">Double stack ksh 500</option>
       
     </select>
 
@@ -158,13 +159,14 @@
     <Button>click here</Button>
 
   
-    <input type="submit" value="Submit">
+    <input type="submit" class = "btn" value="Submit" onclick=pizz()>
+
   </form>
 </div>
 </div><h3>DELIVERY ADDRESS:</h3>
     <div class="d">
       <h3>DELIVERY ADDRESS</h3>
-      <form action="/action_page.php">
+      <form >
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
     
@@ -182,6 +184,43 @@
       
         <input type="submit" value="Submit">
       </form>
+    </div>
+    <div class="container">
+      <div class="col-md-3">
+
+      </div>
+      <div class="col-md-6">
+          <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Flavor</th>
+                  <th scope="col">Size</th>
+                  <th scope="col">Crust</th>
+                  <th scope="col">Toppings</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col" onchange=totalSelectChange()>Total</th>
+                </tr>
+              </thead>
+              <tbody id="pizza">
+                <tr>
+                  <td id="  "></td>
+                  <td id="psize"></td>
+                  <td id="pcrust"></td>
+                  <td id="ptoppings"></td>
+                  <td id="pnumber"></td>
+                  <td id="ptotal-cost"></td>
+                </tr>
+              </tbody>
+            </table>
+
+      </div>
+      <div class="col-md-3">
+
+      </div>
+
+
+
+
     </div>
 
     <script src="index.js"></script>
