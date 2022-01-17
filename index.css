@@ -12,8 +12,21 @@
   justify-content: space-between;
   color:yellow;
 background-color: black;
-}
 
+}
+marquee{
+  font-size: 50px;
+  font-weight: 800;
+  color: #bf7442;
+  font-family: sans-serif;
+  }
+
+  .maquee{
+display: flex;
+justify-content: space-evenly;
+color: red;
+
+  }
 .header{
   text-align: center;
   padding-bottom: 80px;
