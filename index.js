@@ -6,7 +6,6 @@ function PizzaOrder(size, crust, toppings) {
     this.quantity = number;
     this.price = 0;
 };
-
 pizzaSelectChange = function () {
     this.flavor = $("#flavor option:selected").val();
     document.getElementById("pflavor").innerHTML = this.flavor;
@@ -37,55 +36,87 @@ totalSelectChange = function () {
     document.getElementById("ptotal-cost").innerHTML = this.price;
     console.log(this.price)
 }
-
- function pizz (){
-    let customFlavour = $("#flavour option:selected").val();
-        let customSize = $("#size option:selected").val();
-        let toppings= $("#toppings").val();
-        let customCrust = $("#crust").val();
-        let customQuantity = $("#quantity option:selected").val();
-
-        if (customToppings == "pinapple") {
-            customToppings = 200
-        }
-        else if (customToppings == " green pepper") {
-            customToppings = 100
-        }
-        else if (customToppings == "mushroom") {
-            customToppings = 250
-        }
-        else if (customToppings == "bacon") {
-            customToppings = 300
-        }
-        if (customSize == "Extra large") {
-            sizePrice = 1500;
-        }
-        else
-        if (customSize == "Large") {
-           sizePrice = 1250;
-       }
-       else if (customSize == "Medium") {
-           sizePrice = 600;
-       }
-       else if (customSize == "Small") {
-           sizePrice = 500;
-       }
-       else(sizePrice == 0);
-       if (customCrust == "Thin") {
-        crustPrice = 200;
+$("#lets-order").on("submit", function (e) {
+    //prevent default action
+    e.preventDefault();
+    let customToppings = $("#topping option:selected").val();
+    let customFlavor = $("#flavor option:selected").val();
+    let quantity = $("#number").val();
+    let customSize = $("#size option:selected").val();
+    let customCrust = $("#crust option:selected").val();
+    if (customToppings == "pinapple") {
+        customToppings = 200
+    }
+    else if (customToppings == "pepper") {
+        customToppings = 100
+    }
+    else if (customToppings == "mushroom") {
+        customToppings = 250
+    }
+    else if (customToppings == "bacon") {
+        customToppings = 300
+    }
+    if (customSize == "Extra large") {
+        sizePrice = 1500;
+    }
+    else
+     if (customSize == "Large") {
+        sizePrice = 1250;
+    }
+    else if (customSize == "Medium") {
+        sizePrice = 600;
+    }
+    else if (customSize == "Small") {
+        sizePrice = 500;
+    } else {
+        sizePrice = 0;
+    }
+    if (customCrust == "Thin") {
+        crustPrice = 100;
     }
     else if (customCrust == "Thick") {
-        crustPrice = 300;
+        crustPrice = 200;
     }
     else if (customCrust == "DoubleStack") {
-        crustPrice = 500;
+        crustPrice = 250;
     }
     else {
         crustPrice = 0;
     }
     totalCost = sizePrice + crustPrice + (customToppings);
-    totalCost = totalCost * quantity; 
-    alert("You have selected "+customSize+" Pizza."+"\n"+" with "+customCrust+" as crust and"+"\n"+" with "+customToppings+" as toppings"+"Total price is Ksh."+totalCost);
-    
+    totalCost = totalCost * quantity;
+    $("#pflavor").html(customFlavor);
+    $("#psize").html(customSize);
+    $("#pcrust").html(customCrust);
+    $("#ptoppings").html(customToppings);
+    $("#pnumber").html(quantity);
+    $("#ptotal-cost").html(totalCost);
+    console.log(totalCost);
+});
+
+$("#check-info").on("click", function (e) {
+    //prevent default action
+    e.preventDefault();
+    let person = $("input#name").val();
+    let phone = $("input#phone").val();
+    let location = $("input#location").val();
+    let deliveryAmount = totalCost + 150;
+    if ($("input#name").val() && $("input#phone").val() && $("input#location").val() != "") {
+
+        $("#message").append(person + ", We are processing your order and it will be delivered to you at " + location + ". Prepare sh. " + deliveryAmount + ". It is inclusive the delivery fee and your order bill");
+        $("#message").slideDown(1200);
     }
- 
+    else {
+        alert("Please provide your delivery information!");
+    }
+
+
+});
+function swall(){
+    Swal.fire({
+        title: 'Error!',
+        text: 'Do you want to continue',
+        icon: 'error',
+        confirmButtonText: 'Cool'
+      })
+}

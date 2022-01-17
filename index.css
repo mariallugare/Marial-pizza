@@ -12,6 +12,7 @@
   justify-content: space-between;
   color:yellow;
 background-color: black;
+padding-bottom: 30%;
 
 }
 marquee{
@@ -21,12 +22,7 @@ marquee{
   font-family: sans-serif;
   }
 
-  .maquee{
-display: flex;
-justify-content: space-evenly;
-color: red;
 
-  }
 .header{
   text-align: center;
   padding-bottom: 80px;
@@ -36,6 +32,7 @@ color: red;
 .about{
   text-align: center;
   color:black;
+
   
 }
 .menu{
